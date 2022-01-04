@@ -16,4 +16,8 @@ get '/secret' do
   "This is a secret"
 end
 
-#end
+get '/cat' do
+  '<img src="https://i.imgur.com/jFaSxym.png">'
+end
+
+# end
