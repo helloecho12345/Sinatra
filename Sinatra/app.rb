@@ -23,6 +23,7 @@ end
 
 get '/named-cat' do
   p params
+  # params come from the URL after the ? 
   @name=params[:name]
   erb(:index)
 end
