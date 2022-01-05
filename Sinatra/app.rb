@@ -5,7 +5,7 @@ require "sinatra/reloader" if development?
 class MyApp < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
-  end
+  end 
 =end
 
 get '/' do
@@ -23,9 +23,8 @@ end
 
 get '/named-cat' do
   p params
-  # params come from the URL after the ? 
   @name=params[:name]
   erb(:index)
 end
 
-# end
+
